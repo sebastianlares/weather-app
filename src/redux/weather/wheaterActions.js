@@ -31,7 +31,7 @@ export const fetchLocationData = (location) => {
     dispatch(fetchDataRequest);
     axios
       .get(
-        `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${location}&days=3`
+        `https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${location}&days=3`
       )
       .then((response) => {
         const locationData = response.data;
@@ -52,7 +52,7 @@ export const fetchInitialData = () => {
         const { coords } = loc;
         axios
           .get(
-            `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${coords.latitude},${coords.longitude}&days=3`
+            `https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${coords.latitude},${coords.longitude}&days=3`
           )
           .then((response) => {
             const weatherData = response.data;
