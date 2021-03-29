@@ -13,7 +13,7 @@ Liver Server: https://sebastianlares.github.io/weather-app/
 - [Redux-thunk](https://www.npmjs.com/package/redux-thunk)
 - [React-redux](https://www.npmjs.com/package/react-redux)
 
-## Installación
+## Instalación
 
 - Forkéa y clonea el repositorio.
 
