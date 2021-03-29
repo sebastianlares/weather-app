@@ -11,7 +11,7 @@ const DailyForecast = ({ userData }) => {
   const dayDate = new Date();
 
   return (
-    <Card style={{ marginBottom: "20px" }}>
+    <Card className={classes.dailyCard} style={{ marginBottom: "20px" }}>
       <Typography
         color="textSecondary"
         style={{ paddingLeft: "30px", paddingTop: "10px" }}

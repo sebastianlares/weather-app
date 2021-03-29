@@ -2,7 +2,7 @@ import { fade, makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    marginTop: "100px",
+    marginTop: "50px",
     background: "#90b7d9",
     height: "fit-content",
     display: "flex",
@@ -19,12 +19,16 @@ const useStyles = makeStyles((theme) => ({
       paddingLeft: "0px",
       paddingRight: "0px",
       width: "100%",
+      marginTop: "0px",
     },
   },
   card: {
     height: "fit-content",
     width: "100%",
     marginBottom: "20px",
+    [theme.breakpoints.down("xs")]: {
+      width: "98%",
+    },
   },
   cardContent: {
     display: "flex",
@@ -85,6 +89,12 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     display: "flex",
     justifyContent: "flex-end",
+  },
+  dailyCard: {
+    marginBottom: "20px",
+    [theme.breakpoints.down("xs")]: {
+      width: "98%",
+    },
   },
   forecastContainer: {
     justifyContent: "center",
